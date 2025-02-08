@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Poppins;
+}
+body {
+    display: flex;
+    flex-direction: column; /* Isso evita que tudo fique desalinhado horizontalmente */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4; 
+}
+
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.input-container input  {
+    width: 300px; /* Define um tamanho fixo */
+    min-width: 250px; /* Evita que fiquem muito pequenos */
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.input-container textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-container button {
+    width: 100%;
+    height: 40px;
+    max-width: 425px; 
+    background: rgb(95, 138, 202);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+#weather-result{
+    background-color: rgb(95, 138, 202);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-style:groove;
+    border-radius: 20px;
+}
+#weather-result p{
+    margin: 15px;
+    color: rgb(250, 250, 250);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row; /* Mantém os elementos lado a lado */
+    justify-content: center;
+    align-items: center;
+    gap: 30px; 
+}
+p{
+    margin-bottom: 10px;
+}
+.aviso {
+    background-color: #c58791; 
+    color: #333;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 1000; 
+    font-size: 14px;
+  }
+  
+  .aviso p {
+    margin: 0;
+  }
+  
+  .aviso strong {
+    font-weight: bold;
+  }
